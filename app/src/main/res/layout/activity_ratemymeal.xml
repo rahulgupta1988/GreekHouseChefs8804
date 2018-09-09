@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_weight=".27"
+                    android:id="@+id/header_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@drawable/rate_banner"
+                    android:paddingTop="10dp">
+
+                    <com.pkmmte.view.CircularImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:border="true"
+                        app:border_color="#EEEEEE"
+                        app:border_width="2dp"
+                        app:shadow="true"
+                        android:src="@drawable/app_icon"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        />
+
+                    <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_below="@+id/profile_icon"
+                        android:layout_centerHorizontal="true" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight=".73"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_weight=".27"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="#86A78A">
+
+
+                        <RelativeLayout
+                            android:id="@+id/meal_tab"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:id="@+id/meal_ic"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ratingmeal_tab_selector"
+                                android:layout_centerHorizontal="true"/>
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                android:id="@+id/meal_txt"
+                                android:layout_below="@+id/meal_ic"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="Rate Meal"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:textColor="#ffffff"/>
+
+                            <ImageView
+                                android:id="@+id/arrow_meal"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/active_arrow_rate" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/chef_tab"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginTop="10dp">
+
+                            <ImageView
+                                android:id="@+id/chef_ic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ratingchef_tab_selctor"
+                                android:layout_centerHorizontal="true"/>
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                android:id="@+id/chef_txt"
+                                android:layout_below="@+id/chef_ic"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:text="Rate Chef"
+                                android:textSize="14sp"
+                                android:gravity="center"
+                                android:textColor="#686868"/>
+
+                            <ImageView
+                                android:id="@+id/arrow_chef"
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/active_arrow_rate"
+                                android:visibility="gone"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_weight=".73"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center">
+                        <include
+                            layout="@layout/rateview"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <View
+                    android:layout_weight=".2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center" />
+
+                <android.support.design.widget.TabLayout
+                    android:layout_weight=".105"
+                    android:id="@+id/menu_tabs"
+                    style="@style/MyCustomTabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+                    app:tabIndicatorHeight="5dp"
+                    android:layout_gravity="center" />
+
+                <View
+                    android:layout_weight=".695"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/DrawerLinear"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:weightSum="1"
+            android:visibility="visible">
+
+            <include layout="@layout/drawerheader_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

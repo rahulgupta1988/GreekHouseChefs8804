@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+            <ImageView
+                android:layout_weight=".2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/social_banner"/>
+
+            <RelativeLayout
+                android:layout_weight=".8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/background_color">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/recshape"
+                    android:layout_margin="10dp"
+                    android:padding="20dp">
+
+
+                   <RelativeLayout
+                       android:id="@+id/smile_lay"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <ImageView
+                           android:id="@+id/smile_ic"
+                           android:layout_width="40dp"
+                           android:layout_height="40dp"
+                           android:src="@drawable/smile_social"/>
+
+                       <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                           android:layout_toRightOf="@+id/smile_ic"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Enjoyed your meal?"
+                           android:textSize="15sp"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="10dp"
+                           android:textColor="#202020"/>
+                   </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@+id/smile_lay"
+                        android:id="@+id/cap_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <ImageView
+                            android:id="@+id/cap_ic"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/cap_social"/>
+
+                        <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                            android:layout_toRightOf="@+id/cap_ic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Love your chef?"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#202020"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_below="@+id/cap_lay"
+                        android:id="@+id/pic_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+                        <ImageView
+                            android:id="@+id/pic_ic"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/pic_social"/>
+
+                        <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                            android:layout_toRightOf="@+id/pic_ic"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Have pictures to share of your food or event?"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#202020"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_below="@+id/pic_lay"
+                        android:id="@+id/line_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="20dp">
+
+                        <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Drop Us a line!"
+                            android:textSize="22sp"
+                            android:layout_centerVertical="true"
+                            android:textColor="#040404"
+                            android:gravity="center"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                       android:layout_below="@+id/line_lay"
+                        android:id="@+id/share_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/insta_ic"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/instagram_social"/>
+
+                        <ImageView
+                            android:layout_toRightOf="@id/insta_ic"
+                            android:id="@+id/fb_ic"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/facebook_social"
+                            android:layout_marginLeft="30dp"/>
+
+                        <ImageView
+                            android:layout_toRightOf="@+id/fb_ic"
+                            android:id="@+id/twit_ic"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/twitter_social"
+                            android:layout_marginLeft="30dp"/>
+
+                    </RelativeLayout>
+                    </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_weight=".3"
+                android:layout_width="100dp"
+                android:layout_height="0dp"
+                android:src="@drawable/icon_banner_social"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
+    </RelativeLayout>

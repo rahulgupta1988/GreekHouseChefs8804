@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/linear"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".87">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dinner_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center|bottom"
+        android:gravity="center|bottom"
+        android:layout_weight=".13">
+
+
+        <RelativeLayout
+            android:id="@+id/download_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/red_btn_final"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dl_ic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/downlaod_ic"/>
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_toRightOf="@+id/dl_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download Menu"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:elevation="20dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

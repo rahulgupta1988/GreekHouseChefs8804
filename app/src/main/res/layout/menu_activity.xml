@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_weight=".3"
+                android:id="@+id/header_lay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/breakfast_banner_ic"
+                android:paddingTop="10dp">
+
+                <com.pkmmte.view.CircularImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:border="true"
+                    app:border_color="#EEEEEE"
+                    app:border_width="2dp"
+                    app:shadow="true"
+                    android:src="@drawable/profile_ic"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    />
+
+                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:layout_below="@+id/profile_icon"
+                    android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_weight=".7"
+                android:id="@+id/menuPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:background="@color/background_color"/>
+
+            <RelativeLayout
+                android:id="@+id/download_lay"
+                android:layout_weight=".001"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/_login_btn_green"
+                android:gravity="center">
+
+             <!--   <ImageView
+                    android:id="@+id/dl_ic"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/downlaod_ic"
+                    android:layout_centerVertical="true"/>
+                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                    android:layout_toRightOf="@+id/dl_ic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download Menu"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="20dp"/>-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <View
+                android:layout_weight=".2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center" />
+
+            <android.support.design.widget.TabLayout
+                android:layout_weight=".105"
+                android:id="@+id/menu_tabs"
+                style="@style/MyCustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabIndicatorHeight="5dp"
+                android:layout_gravity="center" />
+
+            <View
+                android:layout_weight=".695"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+</LinearLayout>
+</RelativeLayout>

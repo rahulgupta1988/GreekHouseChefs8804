@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewBold
+                android:id="@+id/popup_heading"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#09b7da"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Adductors"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:weightSum="1"
+            android:layout_gravity="center|top"
+            android:gravity="center|top"
+            android:background="@color/white">
+
+
+            <ListView
+                android:id="@+id/listview_popupitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="#cbcbcb"
+                android:dividerHeight="1dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:padding="5dp">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

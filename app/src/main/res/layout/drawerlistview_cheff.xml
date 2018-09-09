@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:isScrollContainer="false"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingTop="10dp">
+        <RelativeLayout
+            android:id="@+id/submit_menu_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp">
+            <ImageView
+                android:id="@+id/menu_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/submit_menu_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menu_ic"
+                android:text="Submit menu"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/submit_menu_icon"
+            android:id="@+id/menu_development_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/rate_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/menu_dev_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rate_ic"
+                android:text="Menu development"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/menu_development_icon"
+            android:id="@+id/submit_budget_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/request_late_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/submit_bud_navi"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/request_late_ic"
+                android:text="Submit budget"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/submit_budget_icon"
+            android:id="@+id/late_plate_numbers_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/lateplate_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/late_pla_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lateplate_ic"
+                android:text="Late plate numbers"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/late_plate_numbers_icon"
+            android:id="@+id/chef_forum_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/outhouse_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chef_for_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/outhouse_ic"
+                android:text="Chef forum"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/chef_forum_icon"
+            android:id="@+id/submit_recipe_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/allergy_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/submit_rec_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/allergy_ic"
+                android:text="Submit recipe"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/submit_recipe_icon"
+            android:id="@+id/school_calender_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/event_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sch_cal_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/event_ic"
+                android:text="School calendar"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/school_calender_icon"
+            android:id="@+id/event_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/contact_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/even_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/contact_ic"
+                android:text="Events"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/event_icon"
+            android:id="@+id/contact_mgmt_icon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/social_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/conta_mgmt_navig"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/social_ic"
+                android:text="Contact management"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/contact_mgmt_icon"
+            android:id="@+id/out_house_item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/out_house_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/meal_attendance_nav"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/out_house_ic"
+                android:text="Out of house numbers"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/out_house_item"
+            android:id="@+id/craving_item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/craving_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/craving_nav"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/craving_ic"
+                android:text="Craving"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/craving_item"
+            android:id="@+id/change_pass_item"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="6.2dp">
+            <ImageView
+                android:id="@+id/changepass_ic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/change_pass_nav"
+                android:layout_centerVertical="true"
+                />
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/changepass_ic"
+                android:text="Change password"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/change_pass_item"
+            android:id="@+id/submit_rl"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:gravity="center">
+
+    <!--        <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_toRightOf="@+id/dl_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

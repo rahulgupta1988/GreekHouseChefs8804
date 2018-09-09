@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/dialog_rect">
+
+        <com.sixd.greek.house.chefs.cuastomviews.TextViewBold
+            android:id="@+id/dialogTex"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="21dp"
+            android:text="Logout"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_below="@+id/dialogTex"
+            android:id="@+id/greatBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:visibility="visible" >
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Are you sure you want to logout?"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/greatBtn"
+            android:background="#D3D3D3" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/view1"
+            android:weightSum="2.01">
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:id="@+id/btn_cancel_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#1f73d1"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/greatBtn"
+                android:background="#D3D3D3" />
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:id="@+id/btn_ok_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#1f73d1"
+                android:textSize="21dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!--<RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/view1"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <LinearLayout
+                android:id="@+id/btn_ok_ll"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:visibility="visible" >
+
+                <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ok"
+                    android:textColor="#1919ff"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+-->
+        <!-- <LinearLayout
+             android:id="@+id/btn_cancel_ll"
+             android:layout_width="120sp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignTop="@+id/relativeLayout1"
+             android:layout_marginLeft="5dp"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:visibility="visible" >
+
+             <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Cancel"
+                 android:textColor="#1919ff"
+                 android:textSize="20dp"
+                 android:textStyle="bold" />
+         </LinearLayout>
+ -->
+    </RelativeLayout>
+
+</RelativeLayout>

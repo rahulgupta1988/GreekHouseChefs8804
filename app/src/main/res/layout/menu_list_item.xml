@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:elevation="5dp"
+        android:background="@drawable/recshape"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".17"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/day_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/day_circle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/_menu_circle_green"/>
+
+                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                    android:id="@+id/day_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp"/>
+
+                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                    android:id="@+id/month_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JUL"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".73"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                android:id="@+id/item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/day_frame"
+                android:layout_toLeftOf="@+id/cs_circle"
+                android:textColor="#000000"
+                android:ellipsize="end"/>
+
+            </LinearLayout>
+
+<!--
+    android:text="menu meadsadddl menu meal menu meal menu meal menu meal menu meal menu meal menu meal menu meal menu meal menu meal menu meal menu meal menu meal"
+-->
+
+    <!--android:maxLines="2"-->
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight=".1"
+             android:layout_gravity="center"
+             android:gravity="center"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <ImageView
+                 android:id="@+id/cs_circle"
+                 android:layout_width="30dp"
+                 android:layout_height="40dp"
+                 android:src="@drawable/cs_logo_ic"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"/>
+
+             </LinearLayout>
+
+
+
+    </LinearLayout>
+

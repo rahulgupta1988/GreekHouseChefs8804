@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/ll_final"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_margin="7dp"
+        android:background="@drawable/recshape"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <!--rectangularforselsource-->
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="4.7"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                android:id="@+id/forum_category_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center|left"
+                android:textColor="#156fc3"
+                android:textSize="17sp"/>
+
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                android:id="@+id/post_and_topics_txt"
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text=" "
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/store_checkin_status"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/next_arrow"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--   </android.support.v7.widget.CardView>-->
+</LinearLayout>

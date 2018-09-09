@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sixd.greek.house.chefs.cuastomviews.TextViewRegular xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text11"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:text=""
+    android:gravity="center|left"
+    android:paddingLeft="8dp"
+    android:singleLine="true"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    />

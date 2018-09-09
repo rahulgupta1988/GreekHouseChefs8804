@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/header_lay"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#2a2a2a">
+
+        <!--    android:background="@drawable/homeheader_image"-->
+
+        <com.pkmmte.view.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_icon_nav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:border="true"
+            app:border_color="#EEEEEE"
+            app:border_width="2dp"
+            app:shadow="true"
+            android:src="@drawable/profile_ic"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+            android:id="@+id/user_name_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Jonathan"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/profile_icon_nav"
+            android:layout_marginLeft="5dp"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_lay">
+
+        <include layout="@layout/drawerlistview_cheff"
+            android:id="@+id/constantlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/month_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/pre_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/pre_month_arrow_eve"
+                android:layout_toLeftOf="@+id/month_txt"
+                android:layout_centerVertical="true"/>
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewBold
+                android:id="@+id/month_txt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="October"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textColor="#202020"/>
+
+            <ImageView
+                android:id="@+id/nxt_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nxt_month_arrow_eve"
+                android:layout_toRightOf="@+id/month_txt"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/event_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+        </ListView>
+    </LinearLayout>
+
+
+</RelativeLayout>

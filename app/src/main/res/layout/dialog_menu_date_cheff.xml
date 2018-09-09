@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick a date range"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c5c5c5"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ListView
+            android:id="@+id/week_interval_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#101010"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="1">
+        <!--    <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:id="@+id/done_check"
+                android:layout_weight=".49"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="DONE"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="40dp"
+                android:background="#101010"
+                android:layout_gravity="center_horizontal"/>-->
+
+        <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+            android:id="@+id/cancel_check"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="CANCEL"
+            android:gravity="center"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

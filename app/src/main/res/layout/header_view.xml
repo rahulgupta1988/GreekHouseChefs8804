@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="7dp"
+    android:gravity="center"
+    android:layout_centerVertical="true">
+
+
+     <ImageView
+         android:id="@+id/line_menu_icon"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@drawable/header_line_menu"
+         android:layout_alignParentLeft="true"
+         android:visibility="visible"/>
+
+    <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+        android:id="@+id/header_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Home"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/line_menu_icon"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textColor="#3e3e3e"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/download_menu_chef"
+        android:layout_toLeftOf="@+id/date_sel_lay"
+        android:layout_width="22dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/downlaod_menu_icon"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/date_sel_lay"
+        android:layout_toLeftOf="@+id/logout_icon"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/rect_menu_date"
+        android:visibility="gone">
+        <com.sixd.greek.house.chefs.cuastomviews.TextViewBold
+            android:id="@+id/daterange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select week"
+            android:textColor="#CE4652"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"/>
+        <ImageView
+            android:layout_width="15sp"
+            android:layout_height="15dp"
+            android:src="@drawable/calendar_ic"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logout_icon"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logout_icon"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/breakfast_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"></android.support.v7.widget.RecyclerView>-->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".85">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:isScrollContainer="false"
+                android:fillViewport="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <!-- ==========<Fisrt start>============-->
+
+                    <LinearLayout
+                        android:id="@+id/first_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:elevation="5dp"
+                        android:background="@drawable/recshape"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".17"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/day_frame"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true">
+
+                                <ImageView
+                                    android:id="@+id/day_circle"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/_menu_circle_green"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/day_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/month_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JUL"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".63"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                                android:id="@+id/item_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/day_frame"
+                                android:layout_toLeftOf="@+id/cs_circle"
+                                android:textColor="#000000"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ch_ic"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/request_plate_sel"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/edit_menu"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/pencil_icon"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ==========<Fisrt end>============-->
+
+
+                    <!-- ==========<second start>============-->
+
+                    <LinearLayout
+                        android:id="@+id/second_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:elevation="5dp"
+                        android:background="@drawable/recshape"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".17"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/day_frame2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true">
+
+                                <ImageView
+                                    android:id="@+id/day_circle2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/_menu_circle_green"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/day_txt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/month_txt2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JUL"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".63"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                                android:id="@+id/item_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/day_frame"
+                                android:layout_toLeftOf="@+id/cs_circle"
+                                android:textColor="#000000"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ch_ic2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/request_plate_sel"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/edit_menu2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/pencil_icon"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ==========<Second end>============-->
+
+
+                    <!-- ==========<Third start>============-->
+
+                    <LinearLayout
+                        android:id="@+id/third_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:elevation="5dp"
+                        android:background="@drawable/recshape"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".17"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/day_frame3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true">
+
+                                <ImageView
+                                    android:id="@+id/day_circle3"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/_menu_circle_green"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/day_txt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/month_txt3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JUL"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".63"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                                android:id="@+id/item_text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/day_frame"
+                                android:layout_toLeftOf="@+id/cs_circle"
+                                android:textColor="#000000"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ch_ic3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/request_plate_sel"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/edit_menu3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/pencil_icon"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ==========<Third end>============-->
+
+                    <!-- ==========<Fourth start>============-->
+
+                    <LinearLayout
+                        android:id="@+id/fourth_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:elevation="5dp"
+                        android:background="@drawable/recshape"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".17"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/day_frame4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true">
+
+                                <ImageView
+                                    android:id="@+id/day_circle4"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/_menu_circle_green"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/day_txt4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/month_txt4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JUL"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".63"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                                android:id="@+id/item_text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/day_frame"
+                                android:layout_toLeftOf="@+id/cs_circle"
+                                android:textColor="#000000"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ch_ic4"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/request_plate_sel"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/edit_menu4"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/pencil_icon"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ==========<Fourth end>============-->
+
+                    <!-- ==========<Fifth start>============-->
+
+                    <LinearLayout
+                        android:id="@+id/fifth_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:elevation="5dp"
+                        android:background="@drawable/recshape"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".17"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/day_frame5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true">
+
+                                <ImageView
+                                    android:id="@+id/day_circle5"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/_menu_circle_green"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/day_txt5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/month_txt5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JUL"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".63"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                                android:id="@+id/item_text5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/day_frame"
+                                android:layout_toLeftOf="@+id/cs_circle"
+                                android:textColor="#000000"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ch_ic5"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/request_plate_sel"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/edit_menu5"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/pencil_icon"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ==========<Fifth end>============-->
+
+                    <!-- ==========<Six start>============-->
+
+                    <LinearLayout
+                        android:id="@+id/six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:elevation="5dp"
+                        android:background="@drawable/recshape"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".17"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/day_frame6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true">
+
+                                <ImageView
+                                    android:id="@+id/day_circle6"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/_menu_circle_green"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/day_txt6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/month_txt6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JUL"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".63"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                                android:id="@+id/item_text6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/day_frame"
+                                android:layout_toLeftOf="@+id/cs_circle"
+                                android:textColor="#000000"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ch_ic6"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/request_plate_sel"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/edit_menu6"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/pencil_icon"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ==========<Six end>============-->
+
+                    <!-- ==========<Seven start>============-->
+
+                    <LinearLayout
+                        android:id="@+id/seven_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:elevation="5dp"
+                        android:background="@drawable/recshape"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".17"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/day_frame7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true">
+
+                                <ImageView
+                                    android:id="@+id/day_circle7"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/_menu_circle_green"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/day_txt7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="08"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:layout_marginBottom="5dp"/>
+
+                                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                                    android:id="@+id/month_txt7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="JUL"
+                                    android:layout_gravity="center"
+                                    android:textColor="#ffffff"
+                                    android:textSize="10sp"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".63"
+                            android:layout_gravity="center|left"
+                            android:gravity="center|left"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                                android:id="@+id/item_text7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/day_frame"
+                                android:layout_toLeftOf="@+id/cs_circle"
+                                android:textColor="#000000"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/ch_ic7"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/request_plate_sel"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight=".10"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/edit_menu7"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/pencil_icon"
+                                android:layout_centerVertical="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- ==========<Fisrt end>============-->
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom"
+            android:layout_weight=".15"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/submit_rl"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp"
+                android:background="@drawable/_login_btn_green">
+
+                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                    android:id="@+id/submit_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Save menu"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/submit_rl_final"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="50dp"
+                android:background="@drawable/_login_btn_green">
+
+                <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                    android:id="@+id/submit_data_final"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Submit for approval"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

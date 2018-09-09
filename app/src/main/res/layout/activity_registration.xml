@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student_login_bg">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:isScrollContainer="false"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+
+            <ImageView
+                android:id="@+id/login_logo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/login_logo_icon"
+                android:layout_centerHorizontal="true"/>
+
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewBold
+                android:id="@+id/login_txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER FOR AN ACCOUNT"
+                android:textSize="13sp"
+                android:textColor="#191919"
+                android:layout_below="@+id/login_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewBold
+                android:id="@+id/login_txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="17sp"
+                android:textColor="#326047"
+                android:layout_below="@+id/login_txt1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"/>
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewBold
+                android:id="@+id/signin_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in now"
+                android:textSize="16sp"
+                android:textColor="#007393"
+                android:layout_below="@+id/login_txt2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/user_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signin_txt"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/name_icon"
+                    />
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:hint="Name"
+                    android:textColorHint="#2a2a2a"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="textNoSuggestions"
+                    android:fontFamily="monospace"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/name_line"
+                android:layout_below="@+id/user_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_view"/>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/campus_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_line"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/campus_icon"
+                    />
+
+                <EditText
+                    android:id="@+id/campus_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:hint="House code"
+                    android:textColorHint="#2a2a2a"
+                    android:textSize="16sp"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="monospace"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/campus_line"
+                android:layout_below="@+id/campus_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_view"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/email_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/campus_lay"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/email_icon"
+                    />
+
+                <EditText
+                    android:layout_toRightOf="@+id/img1"
+                    android:id="@+id/email_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:hint="Email (must be .edu)"
+                    android:textColorHint="#2a2a2a"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="monospace"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    />
+
+               <!-- <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="must be .edu"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="monospace"
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="bottom"
+                    />-->
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/email_line"
+                android:layout_below="@+id/email_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_view"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/username_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_lay"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/username_icon"
+                    />
+
+                <EditText
+                    android:id="@+id/username_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:hint="Username"
+                    android:textColorHint="#2a2a2a"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="textNoSuggestions"
+                    android:fontFamily="monospace"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    />
+
+<!--
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+-->
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/username_line"
+                android:layout_below="@+id/username_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_view"/>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/pass_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_line"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/password_icon"
+                    />
+
+                <EditText
+                    android:id="@+id/pass_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:hint="Password"
+                    android:textColorHint="#2a2a2a"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="15dp"
+                    android:inputType="textPassword"
+                    android:fontFamily="monospace"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pass_line"
+                android:layout_below="@+id/pass_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_view"/>
+
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:id="@+id/signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/_login_btn_green"
+                android:layout_below="@+id/pass_line"
+                android:text="Sign Up"
+                android:textColor="#fefefe"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</LinearLayout>
+
+</RelativeLayout>

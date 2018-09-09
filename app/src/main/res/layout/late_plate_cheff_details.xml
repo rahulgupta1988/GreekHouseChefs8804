@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2">
+
+
+    <LinearLayout
+        android:id="@+id/lunch_ll"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+
+        <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Lunch Allergy"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="#ba5c00"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#b6cec1"
+            android:layout_below="@+id/dish_txt_ll" />
+
+
+
+        <ListView
+            android:id="@+id/allergy_lunch_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dinner_ll"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Dinner Allergy"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="#ba5c00"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#b6cec1"
+                android:layout_below="@+id/dish_txt_ll" />
+
+            <ListView
+                android:id="@+id/allergy_dinner_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

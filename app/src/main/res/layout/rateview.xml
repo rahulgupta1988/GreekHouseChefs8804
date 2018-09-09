@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingTop="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="5dp">
+
+    <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+        android:id="@+id/txt_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Did you love your meal?"
+        android:textSize="14sp"
+        android:textColor="#1f3328"
+        android:gravity="center"/>
+
+
+    <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+        android:id="@+id/txt_lay1"
+        android:layout_below="@+id/txt_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Have a suggestion for the chef?\n\n Please let us know!"
+        android:textSize="14sp"
+        android:textColor="#1f3328"
+        android:gravity="center" />
+
+    <com.sixd.greek.house.chefs.cuastomviews.TextViewRegular
+        android:id="@+id/txt_lay2"
+        android:layout_below="@+id/txt_lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is an anonymous rating and is\n sent to management then communicated\n to your chef."
+        android:textSize="12sp"
+        android:textColor="#1f3328"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@+id/star_lay"
+        android:layout_below="@+id/txt_lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/start_one"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_blank"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_toRightOf="@+id/start_one"
+            android:id="@+id/start_two"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_blank"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:layout_toRightOf="@+id/start_two"
+            android:id="@+id/start_three"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_blank"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_toRightOf="@+id/start_three"
+            android:id="@+id/start_four"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_blank"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_toRightOf="@+id/start_four"
+            android:id="@+id/start_five"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/star_blank"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/comt_lay"
+        android:layout_below="@+id/star_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/pencil_ic"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/pencil_icon"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/rate_comment_txt"
+            android:layout_toRightOf="@+id/pencil_ic"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="Leave us a note"
+            android:background="#00000000"
+            android:maxLines="4"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_below="@+id/rate_comment_txt"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_view"/>
+
+    </RelativeLayout>
+
+    <com.sixd.greek.house.chefs.cuastomviews.TextViewSemiBold
+        android:id="@+id/submit_rate"
+        android:layout_below="@+id/comt_lay"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:background="@drawable/_login_btn_green"
+        android:text="Rate"
+        android:textColor="#fefefe"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>

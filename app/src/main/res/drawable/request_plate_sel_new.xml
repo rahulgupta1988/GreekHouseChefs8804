@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res/com.charlesharley.example.android.customdrawablestates"
+    >
+    <!--
+    We make the pressed and focused selector items transparent so the ListView's own selector states show through.
+    -->
+    <item android:state_selected="true"
+        android:drawable="@drawable/request_checkbox_active_new"
+        />
+    <item android:state_focused="true"
+        android:drawable="@drawable/request_checkbox_active_new"
+        />
+    <item android:state_enabled="true"
+        android:drawable="@drawable/request_checkbox_deactive_new"
+        />
+</selector>
